@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color:#8765c7;
+    color: black
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    background-color: #6a49a7;
+    color: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #2e2e2e
+}
+
+p {
+    color: #ccc;
+    padding-bottom: 1rem
+}
+
+a {
+    background-color: #6a49a7;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+/* Pages & containers */
+
+.top-content, .bottom-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to go down in small screens */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.top-content {
+    margin-top: 3rem
+}
+
+.bottom-content {
+    margin-bottom: 3rem;
+}
+
+#project-1, #project-2, #project-3 {
+    background-color: #363636;
+    box-shadow: 0 0 25px #202020;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    overflow: hidden;
+}
+
+#project-1 {
+    display: flex;
+    max-width: 850px;
+    height: 400px;
+}
+
+#project-2, #project-3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 300px
+}
+
+#project-1 .img-frame {
+    background-color: #333333
+}
+
+#project-1 img {
+    min-width: 150px;
+    width: 20vw;
+    max-width: 300px;
+    height: auto;
+    margin: 3rem auto;
+}
+
+#project-1 .info {
+    padding: 2rem;
+}
+
+
+#project-2 .header-frame, #project-3 .header-frame {
+    background: #333333;
+    height: 80px;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+#project-2 .info, #project-3 .info {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Footer */
+
+footer {
+    transition: background-color 0.5s;
+    text-align: center;
+    padding: 10px;
+    background-color: #363636;
+    box-shadow: 0 0 15px #202020;
+}
+
+
+/* Images 
+img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}  */
